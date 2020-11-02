@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayman</title>
+    <style>
+        header{
+            border-radius: 1em;
+            margin: auto;
+            width: 85%;
+            padding: 1.6em 0;
+            background-color: #892cdc;
+            margin-top: 3em;
+        }
+        
+        nav {
+            text-align: center;
+        }
+        
+        header nav ul li{
+            font-family: 'Courier New', Courier, monospace;
+            list-style: none;
+            display: inline;
+            margin: 0 10%;
+        }        
+        
+        .header_link{
+            color: yellow;
+            text-decoration: none;
+        }
+
+        .header_link:hover{
+            color: tomato;
+        }
+
+        .img_section{
+            text-align: center;
+        }
+
+        #main_img {
+            border-radius: 10px;
+            margin: 4em auto;
+            width: 98%;
+        }
+
+        #content_div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 1.4em;
+            grid-row-gap: 1.4em;
+            
+        }
+
+        #content_section{
+            margin: auto;
+            width: 80%;
+            background-color: skyblue;
+            border-radius: 1em;
+            border: gold dashed 6px;
+            padding: 2em;
+        }
+
+        #content_div .content_item{
+            /* width: fit-content; */
+            border-radius: 1em;
+            padding: 4em;
+        }
+        
+        #content_div .content_item:nth-child(1){
+             background: url("./images/325466_1100-1100x628.jpg") center;
+        }
+
+        #content_div .content_item:nth-child(3){
+             background: url("./images/718ddc90e7f9415c5a20ee139e7b6c96.jpg") center;
+        }
+        
+        #content_div .content_item:nth-child(5){
+             background: url("./images/fTl9KQgL_400x400.jpg") center;
+        }
+
+       #content_div .content_item:nth-child(even){ 
+            /* justify-content: center; */
+            /* justify-self: center; */
+            background-color: gold;
+        }
+
+        #contact_info{
+            border-radius: 10px;
+            margin:4em auto 2em;
+            background: slateblue;
+            width: 40%;
+            padding: 3em;
+        }
+
+        #contact_info h1{
+            display: block;
+            width: fit-content;
+            margin: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #contact_info ul{
+            list-style: none;
+        }
+        
+        #contact_info ul li{
+            color: white;
+            margin: 4px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #contact_info ul li span{
+            color: gold;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="header_link">Home</a></li>
+                <li><a href="#" class="header_link">Category</a></li>
+                <li><a href="#" class="header_link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="img_section">
+        <img id="main_img" src="./images/325466_1100-1100x628.jpg">
+    </section>
+
+    <section id="content_section">
+        <div id="content_div">
+            <div class="content_item"></div>
+            <div class="content_item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad iure quibusdam mollitia deserunt ut vel unde, dolorum maxime alias fugit?</div>
+            <div class="content_item"></div>
+            <div class="content_item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos amet praesentium harum ipsa maiores impedit quasi eveniet hic cumque deleniti?</div>
+            <div class="content_item"></div>
+            <div class="content_item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad necessitatibus natus odio! Est eveniet qui veritatis, rerum consectetur rem.</div>
+        </div>
+
+        <div id="contact_info">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><span>Name:</span> Ayman Ahmed</li>
+                <li><span>Email:</span> Ayman_Ahmed@Gmail.Com</li>
+                <li><span>Phone Number:</span> 01004206100</li>
+            </ul>     
+        </div>
+    </section>
+</body>
+</html>
